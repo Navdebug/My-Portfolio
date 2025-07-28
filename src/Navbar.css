@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,4 +30,76 @@
 .theme-toggle {
   cursor: pointer;
   font-size: 1.2rem;
+} */
+
+/* ===== Navbar basic styles ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  /* Smooth color/background transition */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease; /* smooth text color change */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease; /* smooth link color change */
+}
+
+/* Hover effect for nav links */
+.nav-links a:hover {
+  color: #007bff; /* light mode hover color: blue */
+}
+
+/* Theme toggle icon */
+.theme-toggle {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* ===== Dark mode styles ===== */
+html.dark .navbar {
+  background-color: #333;
+  border-bottom: 1px solid #555;
+}
+
+html.dark .nav-links a {
+  color: #eee;
+}
+
+/* Hover effect in dark mode */
+html.dark .nav-links a:hover {
+  color: #4dabf7; /* slightly lighter blue in dark mode */
+}
+
+html.dark .logo {
+  color: #eee;
+}
+
+html.dark .theme-toggle {
+  color: #eee;
+}
+
