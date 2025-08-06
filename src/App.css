@@ -189,3 +189,92 @@ body {
   background-color: #3700b3;
 }
 
+
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+  /* Hero section */
+  .hero-section {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  /* About section */
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  /* Projects section */
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack vertically */
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+
+  /* Skills section */
+  .skills-section {
+    padding: 3rem 1rem;
+  }
+
+  .skills-grid {
+    gap: 1rem;
+  }
+
+  .skill-card {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  /* Contact section */
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-section p {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+  }
+}
